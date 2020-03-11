@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:background="@drawable/bg_masjid1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:id="@+id/jdl"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Masjid"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_below="@id/jdl"
+            android:fontFamily="sans-serif-light"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnIdentitas"
+                app:cardCornerRadius="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Identitas Masjid"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnJadwal"
+                app:cardCornerRadius="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Judul Sholat"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnMarquee"
+                app:cardCornerRadius="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Marquee"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPengumuman"
+                app:cardCornerRadius="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Pengumuman"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSlide"
+                app:cardCornerRadius="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Slide Show"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnTagline"
+                app:cardCornerRadius="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Tagline"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
