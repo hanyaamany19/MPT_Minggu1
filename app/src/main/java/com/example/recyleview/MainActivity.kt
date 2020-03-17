@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         val users=ArrayList<User>()
 
-        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/jadwal_json.php")
+        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/jadwal.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
