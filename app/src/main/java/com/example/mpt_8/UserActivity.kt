@@ -57,7 +57,7 @@ class UserActivity : AppCompatActivity() {
 
         val users=ArrayList<User>()
 
-        AndroidNetworking.get("http://projekdatamahasiswa.000webhostapp.com/user_json.php")
+        AndroidNetworking.get("http://projekdatamahasiswa.000webhostapp.com/user.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
@@ -87,7 +87,7 @@ class UserActivity : AppCompatActivity() {
     }
 
     fun postkeserve(data1:String, data2:String){
-        AndroidNetworking.post("http://projekdatamahasiswa.000webhostapp.com/dt_user.php")
+        AndroidNetworking.post("http://projekdatamahasiswa.000webhostapp.com/dtuser.php")
             .addBodyParameter("username", data1)
             .addBodyParameter("password", data2)
             .setPriority(Priority.MEDIUM)

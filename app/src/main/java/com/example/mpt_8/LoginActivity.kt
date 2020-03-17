@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
     fun postkerserver(data1:String,data2:String)
     {
 
-        AndroidNetworking.post("http://projekdatamahasiswa.000webhostapp.com/user.php")
+        AndroidNetworking.post("http://projekdatamahasiswa.000webhostapp.com/login.php")
             .addBodyParameter("username", data1)
             .addBodyParameter("password", data2)
             .setPriority(Priority.MEDIUM)
