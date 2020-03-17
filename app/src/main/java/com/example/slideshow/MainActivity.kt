@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         val slides=ArrayList<SlideShow>()
 
-        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/slide_json.php")
+        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/slide.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
