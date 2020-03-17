@@ -37,7 +37,7 @@ class IdentitasMasjid : AppCompatActivity() {
     }
 
     fun getdariserver(){
-        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/identitas_json.php")
+        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/identitas.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
@@ -61,7 +61,7 @@ class IdentitasMasjid : AppCompatActivity() {
     }
 
     fun postkeserve(data1:String, data2:String){
-        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses-identitas.php")
+        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses_identitas.php")
             .addBodyParameter("nama_masjid", data1)
             .addBodyParameter("alamat_masjid", data2)
             .setPriority(Priority.MEDIUM)

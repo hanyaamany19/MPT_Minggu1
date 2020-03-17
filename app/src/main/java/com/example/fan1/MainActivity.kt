@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getdariserver(){
-        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/jadwal_json.php")
+        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/jadwal.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun postkeserve(data1:String, data2:String, data3:String,data4:String,data5:String,data6:String){
-        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses-jadwal.php")
+        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses_jadwal.php")
             .addBodyParameter("dhuha", data1)
             .addBodyParameter("shubuh", data2)
             .addBodyParameter("dhuhur", data3)

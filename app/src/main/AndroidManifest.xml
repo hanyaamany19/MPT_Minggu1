@@ -16,11 +16,9 @@
         <activity android:name=".SlideActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Tagline" />
-        <activity android:name=".SlideShow" />
         <activity android:name=".PengumumanMasjid" />
         <activity android:name=".Marguee" />
         <activity android:name=".IdentitasMasjid" />
-        <activity android:name=".JadwalSholat" />
         <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

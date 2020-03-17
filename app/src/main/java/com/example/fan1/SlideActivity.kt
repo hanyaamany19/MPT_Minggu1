@@ -46,7 +46,7 @@ class SlideActivity : AppCompatActivity() {
 
         val slides=ArrayList<slideshow>()
 
-        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/slide_json.php")
+        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/slide.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
@@ -76,7 +76,7 @@ class SlideActivity : AppCompatActivity() {
     }
 
     fun postkeserve(data1:String, data2:String){
-        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses-slide.php")
+        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses_slide.php")
             .addBodyParameter("judul_pengumuman", data1)
             .addBodyParameter("url_pengumuman", data2)
             .setPriority(Priority.MEDIUM)

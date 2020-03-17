@@ -37,7 +37,7 @@ class Marguee : AppCompatActivity() {
     }
 
     fun getdariserver(){
-        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/marquee_json.php")
+        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/marquee.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
@@ -60,7 +60,7 @@ class Marguee : AppCompatActivity() {
     }
 
     fun postkeserve(data1:String){
-        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses-marquee.php")
+        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses_marquee.php")
             .addBodyParameter("isi_marquee", data1)
             .setPriority(Priority.MEDIUM)
             .build()

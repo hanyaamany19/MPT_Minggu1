@@ -62,7 +62,7 @@ class PengumumanMasjid : AppCompatActivity() {
     }
 
     fun postkeserve(data1:String, data2:String){
-        AndroidNetworking.post("https://masjidpintar.000webhostapp.com/proses-pengumuman.php")
+        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses-pengumuman.php")
             .addBodyParameter("judul_pengumuman", data1)
             .addBodyParameter("isi_pengumuman", data2)
             .setPriority(Priority.MEDIUM)

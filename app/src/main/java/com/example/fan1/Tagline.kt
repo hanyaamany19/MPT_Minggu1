@@ -36,7 +36,7 @@ class Tagline : AppCompatActivity() {
     }
 
     fun getdariserver(){
-        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/tagline_json.php")
+        AndroidNetworking.get("https://menumasjidmahasiswa.000webhostapp.com/tagline.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
@@ -59,7 +59,7 @@ class Tagline : AppCompatActivity() {
     }
 
     fun postkeserve(data1:String){
-        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses-tagline.php")
+        AndroidNetworking.post("https://menumasjidmahasiswa.000webhostapp.com/proses_tagline.php")
             .addBodyParameter("isi_tagline", data1)
             .setPriority(Priority.MEDIUM)
             .build()
