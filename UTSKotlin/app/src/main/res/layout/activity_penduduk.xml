@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PendudukActivity"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38sp"
+        android:layout_marginRight="38sp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:cardBackgroundColor="#fff"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data Penduduk"
+                    android:layout_margin="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="32dp"
+                    android:textColor="#000"
+                    android:id="@+id/txt4"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Nama Penduduk"
+                    android:layout_below="@id/txt4"
+                    android:id="@+id/textnama"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Tempat Tanggal Lahir"
+                    android:layout_below="@id/textnama"
+                    android:id="@+id/textttl"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Handphone"
+                    android:layout_below="@id/textttl"
+                    android:id="@+id/texthp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Alamat"
+                    android:layout_below="@id/texthp"
+                    android:id="@+id/textalamat"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnTmbh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#008FFF"
+                    app:cardBackgroundColor="#008FFF"
+                    app:cardCornerRadius="5sp"
+                    android:layout_below="@id/textalamat"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tambah"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="#fff"
+                        android:layout_margin="10sp"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnKmbli1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF0000"
+                    app:cardBackgroundColor="#FF0000"
+                    app:cardCornerRadius="5sp"
+                    android:layout_below="@id/btnTmbh"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kembali"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="#fff"
+                        android:layout_margin="10sp"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
