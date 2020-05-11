@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MingguKedua</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_setting" />
+    <string name="action_item1" />
+    <string name="action_item2" />
+</resources>
